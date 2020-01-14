@@ -1,9 +1,72 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <link rel="stylesheet" href="index.css" />
+    <title>Create Account</title>
+    <link rel="stylesheet" href="index.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="responsive.css">
+    <script async src="js/maskPhone.js"></script>
+    <script async src="js/index.js"></script>
   </head>
   <body>
-    <!-- escreva seu codigo aqui -->
+    <section>
+      <div class="l-side">
+        <div class="bg-image"></div>
+      </div>
+      <div class="r-side">
+        <form action="">
+          <h2>Create Account!</h2>
+          <div class="form-group">
+            <div class="col-6">
+              <input type="name" placeholder="First Name" data-type="name" required>
+            </div>
+            <div class="col-6">
+              <input type="phone" placeholder="Phone" id="phone" data-type="phone">
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-12">
+              <input type="email" placeholder="Email Address" id="email" data-type="e-mail" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-6">
+              <input type="password" placeholder="Password" id="password" data-type="password" required>
+            </div>
+            <div class="col-6">
+              <input type="password" placeholder="Repeat Password" id="repeatPassword" data-type="confirm password" required>
+              <span class="error" id="error">Please check your password</span>
+            </div>
+          </div>
+          <div class="col-12">
+            <button type="button" class="btn btn-register" id="register">Register Account</button>
+          </div>
+          <div class="col-12">
+            <button type="button" class="btn btn-google dont-work"><i class="fa fa-google"></i>Register with Google</button>
+          </div>
+          <div class="col-12">
+            <button type="button" class="btn btn-facebook dont-work"><i class="fa fa-facebook"></i>Register with Facebook</button>
+          </div>
+          <div class="have-account">
+            <div class="col-12">
+              <a href="javascript:void(0)" class="dont-work">Forgot Password?</a><br>
+              <a href="javascript:void(0)" class="dont-work">Already have an account? Login</a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p id="text-name"></p>
+        <p id="text-phone"></p>
+        <p id="text-email"></p>
+        <p id="text-password"></p>
+        <p id="text-confirm"></p>
+      </div>
+    
+    </div>
   </body>
 </html>
