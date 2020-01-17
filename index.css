@@ -1,3 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
 body {
   margin: 80px;
+  background: rgb(56,48,177);
+  background: linear-gradient(90deg, rgba(56,48,177,1) 0%, rgba(44,44,215,1) 35%, rgba(50,162,185,1) 100%);
+}
+
+
+.card-form {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.bg-dog {
+  width: 500px;
+  height: 100%;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.side-right {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.side-right h3 {
+  font-size: 2rem;
+}
+
+.side-right a {
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+.side-right form {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  width: 100%;
+}
+
+.side-right form input {
+  margin: 15px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 30px;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+.side-right form input:focus {
+  outline: 0;
+}
+
+.side-right form input#name {
+  grid-column: 2 / 7;
+}
+
+.side-right form input#phone {
+  grid-column: 7 / 12;
+}
+
+.side-right form input#email {
+  grid-column: 2 / 12;
+}
+
+.side-right form input#password {
+  grid-column: 2 / 7;
+}
+
+
+.side-right form input#repeatPassword {
+  grid-column: 7 / 12;
+}
+
+.side-right form button {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 30px;
+  margin: 15px;
+  font-family: 'Poppins', sans-serif;
+  grid-column: 2 / 12;
+}
+
+.side-right form button#register {
+  background-color: #0984e3;
+  color: #FFF;
+}
+
+.side-right form button i {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.side-right form button#register-google {
+
+  background-color: #d63031;
+  margin-bottom: 0;
+  color: #fff;
+}
+
+.side-right form button#register-facebook {
+  background-color: #4267b2;
+  color: #fff;
+}
+
+
+.side-right form button:focus {
+  outline: 0;
+}
+
+.line {
+  width: 100%;
+  grid-column: 2 / 12;
+  border: 1px solid #ddd;
 }

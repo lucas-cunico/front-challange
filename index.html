@@ -1,9 +1,37 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Create Account</title>
     <link rel="stylesheet" href="index.css" />
+    <script src="https://kit.fontawesome.com/2f1642c9ea.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <!-- escreva seu codigo aqui -->
+    <section class="card-form">
+      <div class="side-left">
+        <img src="img/dog.jpg" class="bg-dog" alt="Foto de um Cachorro">
+      </div>
+      <div class="side-right">
+        <h3>Create an Account!</h3>
+        <form>
+            <input type="text" name="name" id="name" placeholder="First Name">
+            <input type="text" name="phone" id="phone" placeholder="Phone">
+            <input type="email" name="email" id="email" placeholder="E-mail">
+            <input type="password" name="password" id="password" placeholder="Password">
+            <input type="password" name="repeatPassword" id="repeatPassword" placeholder="Repeat Password">
+            <button id="register">Register Account</button>
+
+            <span class="line"></span>
+            <button id="register-google"><i class="fab fa-google"></i>Register Account</button>
+            <button id="register-facebook"><i class="fab fa-facebook-f"></i>Register Account</button>
+            <span class="line"></span>
+        </form>
+        
+        <a href="#">Forgot password?</a>
+        <a href="#">Already have an account? Login!</a>
+      </div>
+    </section>
   </body>
 </html>
