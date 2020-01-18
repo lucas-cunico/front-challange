@@ -34,7 +34,15 @@ body {
 
 .side-right a {
   text-decoration: none;
-  margin-bottom: 5px;
+  color: #0984e3;
+}
+
+.side-right a#forgot-password {
+  margin-top: 15px;
+}
+
+.side-right a#have-account {
+  margin-bottom: 15px;
 }
 .side-right form {
   display: grid;
@@ -74,6 +82,14 @@ body {
 
 .side-right form input#repeatPassword {
   grid-column: 7 / 12;
+}
+
+.side-right form span#pass-match {
+  grid-column: 9 / 12;
+  text-align: right;
+  padding: 15px;
+  font-size: 0.9rem;
+  color: #d63031;
 }
 
 .side-right form button {

@@ -15,23 +15,26 @@
       </div>
       <div class="side-right">
         <h3>Create an Account!</h3>
-        <form>
+        <form onsubmit="printInformation()">
             <input type="text" name="name" id="name" placeholder="First Name">
-            <input type="text" name="phone" id="phone" placeholder="Phone">
+            <input type="text" name="phone" maxlength="11" id="phone" placeholder="Phone" onblur="phoneMask(this)" onkeypress="return validationNumber(event)">
             <input type="email" name="email" id="email" placeholder="E-mail">
             <input type="password" name="password" id="password" placeholder="Password">
-            <input type="password" name="repeatPassword" id="repeatPassword" placeholder="Repeat Password">
+            <input type="password" name="repeatPassword" id="repeatPassword" placeholder="Repeat Password" onkeyup="checkPassword()">
+            <span id="pass-match"></span>
             <button id="register">Register Account</button>
-
             <span class="line"></span>
             <button id="register-google"><i class="fab fa-google"></i>Register Account</button>
             <button id="register-facebook"><i class="fab fa-facebook-f"></i>Register Account</button>
             <span class="line"></span>
         </form>
         
-        <a href="#">Forgot password?</a>
-        <a href="#">Already have an account? Login!</a>
+        <a href="#" id="forgot-password">Forgot password?</a>
+        <a href="#" id="have-account">Already have an account? Login!</a>
       </div>
     </section>
+    <script src="scripts/mask.js"></script>
+    <script src="scripts/checkPassword.js"></script>
+    <script src="scripts/information.js"></script>
   </body>
 </html>
