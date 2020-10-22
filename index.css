@@ -2,75 +2,91 @@ body {
   margin: 80px;
 }
 
-.from{
-  width: 300px;
-  margin: auto;
-  padding: 40px;
 
-
-}
-.title{
+.title {
   text-align: center;
 }
 
-.form-groop{
-  border-radius:20px;
-  outline: 0;
-  /* width: 100%;  */
-  height: 25px;
-  padding: 20px;
+.groop {
+  widows: 588px;
+
+  justify-content: center;
 }
 
+.form-groop {
+  display: flex;
+  justify-content: space-around;
+  border-radius: 20px;
+  outline: 0;
+  font-size: 25px;
+  margin-bottom: 20px;
+
+}
+
+.form-passaword {
+  border-radius: 20px;
+  outline: 0;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+
 /* button */
-.btn{
+.btn {
   font-size: 18x;
   text-decoration: none;
   display: block;
-   text-align: center;
-   margin-bottom: 30px;
-   padding: 20px;
-   font-weight: bold;
+  text-align: center;
+  margin-bottom: 34px;
+  padding: 20px;
+  font-weight: bold;
 
 }
 
-.btn-1{
+.btn-1 {
   /* width: 100%; */
-  color:#fff;
-  background-color: #11b1eb;
+  color: #fff;
+  background-color: #0592c5;
   border-radius: 20px;
   transition: transform 0.5s;
 }
 
-.btn-1:hover{
- background-color: #11b1eb;;
- transform: translate(0px,-5px);
- transition: transform 0.5s;
+.btn-1:hover {
+  background-color: #08a5df;
+  ;
+  transform: translate(0px, -5px);
+  transition: transform 0.5s;
 }
 
-.btn-2{
-  border-radius:20px;
-  color:#fff;
+.btn-2 {
+  border-radius: 20px;
+  color: #fff;
   background-color: #ca0202;
   transition: transform 0.5s;
 }
 
-.btn-2:hover{
- background-color: #ca0202; 
- transform: translate(0px,-5px);
- transition: transform 0.5s;
-}
-
-.btn-3{
-  border-radius:20px;
-  color:#fff;
-  background-color: #0c5975;
+.btn-2:hover {
+  background-color: #ca0202;
+  transform: translate(0px, -5px);
   transition: transform 0.5s;
 }
 
-.btn-3:hover{
- background-color:#0c5975;
- transform: translate(0px,-5px);
- transition: transform 0.5s;
+.btn-3 {
+  border-radius: 20px;
+  color: #fff;
+  background-color: #077197;
+  transition: transform 0.5s;
+}
+
+.btn-3:hover {
+  background-color:  #0978a0;
+  transform: translate(0px, -5px);
+  transition: transform 0.5s;
 }
 
 
+.destaque {
+
+  color: #088bbb;
+  text-align: center;
+}
