@@ -1,9 +1,69 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <link rel="stylesheet" href="index.css" />
-  </head>
-  <body>
-    <!-- escreva seu codigo aqui -->
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css" />
+</head>
+
+<body class="container">
+  <!-- escreva seu codigo aqui -->
+  <h1 class="title">Create a Account!</h1>
+  <!-- form do html-->
+  <form class="form" action="pagina de ação" method="post" name="dados" onSubmit="return enviardados();">
+
+    <div class="card-img">
+      <!-- <img class="imgLogin" src="img/dog.jpeg" alt="#"> -->
+
+    </div>
+    <table class="groop">
+      <!--placeholder(espaço reservado)-required(exigencia p/ preencher o campo)----->
+      <tr>
+        <td>
+          <input class="form-groop" name="tx_nome" type="text" id="first_nome" placeholder="First Name" required>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <input class="form-groop" name="number" type="text-phone" id="phone" placeholder="Phone" required>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <input class="form-passaword" type="email" name="email" id="email" placeholder="Email Address " required>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <input class="form-groop" type="password" name="password" id="password" placeholder=" Password" required>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <input class="form-groop" type="password" name="password" id="repeat" placeholder="Repeat Password" required>
+        </td>
+      </tr>
+
+
+    </table>
+
+    <a href="/" class="btn btn-1">Register Account</a>
+    <a href="/" class="btn btn-2">G Register With Google</a>
+    <a href="/" class="btn btn-3">f Register With Facebook</a>
+
+
+    <div class="destaque">
+      <span class='destaque'>Forgot Password?</span></p>
+      <span class='destaque'>Alread have an account?Loginl</span></p>
+    </div>
+
+  </form>
+  <script src="index.js"></script>
+</body>
+
 </html>
